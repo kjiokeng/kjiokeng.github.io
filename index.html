@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+
+<html>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  The above 2 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+ -->
+<title>Kevin Jiokeng</title>
+<!-- Set the base URL for all relative URLs within the document -->
+<base href="http://localhost:4000">
+
+<!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag  
+  only applies to resources that are declared after it.
+-->
+
+<!-- Short description of the document (limit to 150 characters) -->
+<!-- This content *may* be used as a part of search engine results. -->
+<meta name="description" content="Kevin Jiokeng - Personal page">
+
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+<!-- Verify website ownership -->
+<meta name="google-site-verification" content=""><!-- Google Search Console -->
+<meta name="yandex-verification" content=""><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content=""><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content=""><!-- Alexa Console -->
+<meta name="p:domain_verify" content=""><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content=""><!-- Norton Safe Web -->
+
+<!-- Allows control over how referrer information is passed -->
+<meta name="referrer" content="no-referrer">
+
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=true">
+
+<!-- Completely opt out of DNS prefetching by setting to "off" -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- Geo tags -->
+<!-- meta name="ICBM" content="latitude, longitude"-->
+<!-- meta name="geo.position" content="latitude;longitude"-->
+<!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
+
+<!-- Link to an external CSS file -->
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&family=Lobster&family=Pacifico&family=Yellowtail&family=Noto+Sans+JP:wght@400;900&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+<!-- BootStrap CDN --> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+
+<!--  GIT TALK CDN  for comment system -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+
+
+<!-- Provides information about an author or another person -->
+<link rel="me" href="mailto:kevin.jiokeng@enseeiht.fr">
+<link rel="me" href="sms:+">
+
+<!-- Open Search -->
+<!-- link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" -->
+
+<!-- Feeds -->
+<!-- link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS" -->
+<!-- link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" -->
+
+<!-- For IE 10 and below -->
+<!-- Place favicon.ico in the root directory - no tag necessary -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+<meta property="fb:app_id" content="">
+<meta property="og:url" content="http://localhost:4000">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kevin Jiokeng, Kevin Jiokeng - Personal page">
+<meta property="og:image" content="/assets/img/kevin_jiokeng.png">
+<meta property="og:image:alt" content="Kevin Jiokeng">
+<meta property="og:description" content="Kevin Jiokeng - Personal page">
+<meta property="og:site_name" content="Kevin Jiokeng">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Kevin Jiokeng">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:url" content="http://localhost:4000">
+<meta name="twitter:title" content="Kevin Jiokeng - Personal page">
+<meta name="twitter:description" content="Kevin Jiokeng - Personal page">
+<meta name="twitter:image" content="/assets/img/kevin_jiokeng.png">
+<meta name="twitter:image:alt" content="Kevin Jiokeng">
+
+<!-- Used for adding in-document CSS -->
+
+
+
+<!-- JavaScript & No-JavaScript tags -->
+
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--
+<script>
+    $(document).ready(function() {
+        $(".toast").toast('show');
+    });
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', ');
+</script>
+
+<noscript>
+  <!-- No JS alternative -->
+</noscript>
+  <body style="background-color:;">
+    
+<nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#014994;">
+  <a class="navbar-brand" href="/index.html"><h4 style="font-family:Noto Sans JP;font-weight:600;color:#ffffff;">Kevin Jiokeng</h4></a>
+  <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-caret-down"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        
+              <li class="nav-item">
+                  <a href="/" class="nav-link" style="font-family:Poppins;color:#ffffff;">Home</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="publications.html" class="nav-link" style="font-family:Poppins;color:#ffffff;">Publications</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="/assets/pdf/CV_Kevin_Jiokeng.pdf" class="nav-link" style="font-family:Poppins;color:#ffffff;">Vitae</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="contact.html" class="nav-link" style="font-family:Poppins;color:#ffffff;">Contact</a>
+              </li>
+        
+    </ul>
+    <ul class="navbar-nav  justify-content-end">
+      <li class="nav-item">
+        
+<!-- Displays Social Media Icons based on _config.yml settings -->
+<span style="color:#ffffff;">
+    <i> &nbsp;&nbsp; </i>
+    
+    
+        <a href="https://github.com/kjiokeng">
+        <span style="color: #ffffff;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://www.linkedin.com/in/kevin-jiokeng">
+        <span style="color: #ffffff;">
+            <i class="fab fa-linkedin fa-lg"></i></a>
+        </span>
+    
+    
+    
+    
+     
+    <i> &nbsp;&nbsp; </i>
+</span>
+
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <div class="dumbarton-spacer-sm"></div>
+    <div class="container">
+      
+
+<!--  HELP TIPS SECTION  -->
+<!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
+
+
+<!-- <nav id="nav-sections" class="nav flex-column d-md-none d-lg-block">
+  
+    <a class="nav-link" href="#news">News</a>
+  
+    <a class="nav-link" href="#publications">Publications</a>
+  
+    <a class="nav-link" href="#teaching">Teaching</a>
+  
+</nav> -->
+
+<!-- ABOUT ME SECTION -->
+<div class="card mx-auto border-0" style="position:relative;background-color:;">
+  <div class="row">
+    <div class="col-md-4">
+      
+        <img src="/assets/img/kevin_jiokeng.png" class="img-thumbnail float-left" alt="...">
+      
+    </div>
+    <!-- EDUCATION SECTION -->
+    <div class="col-md-8">
+      
+      <div class="card-body mt-0" style="color:;">
+      
+        <p style="color:;"><h2 id="kevin-jiokeng">Kevin Jiokeng</h2>
+<p>PhD Student, Research and Teaching Assistant<br />
+Member of <a href="https://www.irit.fr/en/departement/dep-architecture-systems-and-networks/rmess-team/">RMESS Team at IRIT laboratory</a><br />
+<a href="http://www.univ-toulouse.fr/">University of Toulouse</a>, France</p>
+
+<p><strong>kevin (dot) jiokeng (at) enseeiht (dot) fr</strong><br />
+INP-ENSEEIHT, Office F413<br />
+2 Rue Charles Camichel, 31000 Toulouse</p>
+<p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- style="font-family:Poppins;background-color:#014994; -->
+
+<!-- HOME HIGHLIGHTS SECTION -->
+
+
+<div class="card mx-auto mb-1 border-0"  style="max-width: 100%;">
+
+  <!-- <div class="card-header" style="background-color:#014994;">
+    <ul class="nav card-header-tabs" id="test-list" role="tablist">
+      <li class="nav-item">
+            <a class="nav-link shadow-none" id="" role="tab" aria-controls="news" aria-selected="true" style="font-family:Poppins;color:#ffffff;"> News</a>
+          </li>
+    </ul>
+  </div> -->
+  <h3 class="section-name" id="news">News</h3>
+  <div class="card-body card-tabs">          
+      <div class="tab-content mt-3">
+          <div class="tab-pane active overflow-auto" id="news" role="tabpanel">
+          
+
+          
+              <div class="list-group">
+                <ul class="news-list">
+                  
+                    <li>08/2021: Glad to serve as external reviewer to ACM IMWUT journal</li>
+                  
+                    <li>03/2021: Glad to serve and learn as member of AlgoTel & CoRes 2021 (french national conferences on Networks and Telecommunications) shadow PC</li>
+                  
+                    <li>01/2021: Our paper <a href="/papers/handrate-percom.pdf">"HandRate: Heart Rate Monitoring While Simply Holding a Smartphone"</a> is accepted to IEEE PerCom 2021</li>
+                  
+                    <li>09/2020: Gave a talk at CoRes 2020 on our paper "FUSIC, du Ranging WiFi de haute précision en présence de multi-trajet". <br/>Received the <a style="color: red;" href="https://hal.archives-ouvertes.fr/ALGOTEL2020/page/meilleur-papier-etudiant-distanciel">Best student paper award</a></li>
+                  
+                    <li>05/2020: Our paper <a href="/papers/fusic-cores.pdf">"FUSIC, du Ranging WiFi de haute précision en présence de multi-trajet"</a> is accepted at CoRes 2020</li>
+                  
+                    <li>12/2019: Our paper <a href="/papers/fusic-infocom.pdf">"When FTM Discovered MUSIC: Accurate WiFi-based Ranging in the Presence of Multipath"</a> is accepted to IEEE INFOCOM 2020</li>
+                  
+                    <li>02/2019: Our paper <a href="/papers/xpv-eurosys.pdf">"When EXtended Para-Virtualization (XPV) Meets NUMA"</a> is accepted to ACM EuroSys 2019</li>
+                  
+                    <li>08/2018: Happy to be selected as recipient of MESRI PhD scholarship based on accademic success and research potential. New adventure starting ^^. <i>MESRI is the French Ministry of Higher Education, Research and Innovation.</i></li>
+                  
+                </ul>
+              </div>
+          
+            </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="card mx-auto mb-1 border-0"  style="max-width: 100%;">
+
+  <!-- <div class="card-header" style="background-color:#014994;">
+    <ul class="nav card-header-tabs" id="test-list" role="tablist">
+      <li class="nav-item">
+            <a class="nav-link shadow-none" id="" role="tab" aria-controls="publications" aria-selected="true" style="font-family:Poppins;color:#ffffff;"> Publications</a>
+          </li>
+    </ul>
+  </div> -->
+  <h3 class="section-name" id="publications">Publications</h3>
+  <div class="card-body card-tabs">          
+      <div class="tab-content mt-3">
+          <div class="tab-pane active overflow-auto" id="publications" role="tabpanel">
+          
+
+          
+              <p class="card-text"><ol class="bibliography"><li><div class="row reference">
+  <div id="handrate-percom" class="col-sm-10">
+    
+      <div class="title font-weight-bold">
+        
+          <a href="/papers/handrate-percom.pdf">HandRate: Heart Rate Monitoring While Simply Holding a Smartphone</a>
+        
+      </div>
+      <div class="author">
+        
+          
+          
+            
+              
+                <em>Kevin Jiokeng</em>,
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Gentian Jakllari,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  and André-Luc Beylot
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+        <p>
+          
+            <span><em>In International Conference on Pervasive Computing and Communications (PerCom)</em></span>
+          
+          
+            <span>2021</span>
+          
+          
+            <span>, pp. 1-11</span>
+          
+          
+            <span>, Kassel, Germany</span>
+          
+          <!-- 
+            <span>, doi: <a href="https://doi.org/10.1109/PERCOM50583.2021.9439134"> 10.1109/PERCOM50583.2021.9439134</a></span>
+           -->
+        </p>
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li>
+<li><div class="row reference">
+  <div id="fusic-infocom" class="col-sm-10">
+    
+      <div class="title font-weight-bold">
+        
+          <a href="/papers/fusic-infocom.pdf">When FTM Discovered MUSIC: Accurate WiFi-based Ranging in the Presence of Multipath</a>
+        
+      </div>
+      <div class="author">
+        
+          
+          
+            
+              
+                <em>Kevin Jiokeng</em>,
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Gentian Jakllari,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Alain Tchana,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  and André-Luc Beylot
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+        <p>
+          
+            <span><em>In International Conference on Computer Communications (INFOCOM)</em></span>
+          
+          
+            <span>2020</span>
+          
+          
+            <span>, pp. 1857-1866</span>
+          
+          
+            <span>, Toronto, ON, Canada</span>
+          
+          <!-- 
+            <span>, doi: <a href="https://doi.org/10.1109/INFOCOM41043.2020.9155464"> 10.1109/INFOCOM41043.2020.9155464</a></span>
+           -->
+        </p>
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li>
+<li><div class="row reference">
+  <div id="fusic-cores" class="col-sm-10">
+    
+      <div class="title font-weight-bold">
+        
+          <a href="/papers/fusic-cores.pdf">FUSIC, du Ranging WiFi de haute précision en présence de multi-trajet</a>
+        
+      </div>
+      <div class="author">
+        
+          
+          
+            
+              
+                <em>Kevin Jiokeng</em>,
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Gentian Jakllari,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Alain Tchana,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  and André-Luc Beylot
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+        <p>
+          
+            <span><em>In Rencontres Francophones sur la Conception de Protocoles, l’Évaluation de Performance et l’Expérimentation des Réseaux de Communication (CoRes)</em></span>
+          
+          
+            <span>2020</span>
+          
+          
+          
+            <span>, Lyon, France</span>
+          
+          <!--  -->
+        </p>
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li>
+<li><div class="row reference">
+  <div id="xpv-eurosys" class="col-sm-10">
+    
+      <div class="title font-weight-bold">
+        
+          <a href="/papers/xpv-eurosys.pdf">When EXtended Para-Virtualization (XPV) Meets NUMA</a>
+        
+      </div>
+      <div class="author">
+        
+          
+          
+            
+              
+                
+                  Bao Bui,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Djob Mvondo,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Boris Teabe,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                <em>Kevin Jiokeng</em>,
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Lavoisier Wapet,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Alain Tchana,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Gaël Thomas,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Daniel Hagimont,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  Gilles Muller,
+                
+              
+            
+          
+        
+          
+          
+            
+              
+                
+                  and Noel DePalma
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+        <p>
+          
+            <span><em>In European Conference on Computer Systems (EuroSys)</em></span>
+          
+          
+            <span>2019</span>
+          
+          
+          
+            <span>, Dresden, Germany</span>
+          
+          <!-- 
+            <span>, doi: <a href="https://doi.org/10.1145/3302424.3303960"> 10.1145/3302424.3303960</a></span>
+           -->
+        </p>
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li></ol></p>
+          
+            </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="card mx-auto mb-1 border-0"  style="max-width: 100%;">
+
+  <!-- <div class="card-header" style="background-color:#014994;">
+    <ul class="nav card-header-tabs" id="test-list" role="tablist">
+      <li class="nav-item">
+            <a class="nav-link shadow-none" id="" role="tab" aria-controls="teaching" aria-selected="true" style="font-family:Poppins;color:#ffffff;"> Teaching</a>
+          </li>
+    </ul>
+  </div> -->
+  <h3 class="section-name" id="teaching">Teaching</h3>
+  <div class="card-body card-tabs">          
+      <div class="tab-content mt-3">
+          <div class="tab-pane active overflow-auto" id="teaching" role="tabpanel">
+          
+              <p class="section-description">As Research and Teaching Assistant at Toulouse INP-ENSEEIHT (University of Toulouse), I intervene in the following courses. My teaching interests are mostly related to Networks and Systems and spans across all the 3 levels (L3, M1, M2) of INP-ENSEEIHT engineering school. <br/>M2: Master 2, M1: Master 1, L3: License 3 (Bachelor level)</p>
+          
+
+          
+              <!-- 
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+              
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1"></h5>
+                      <p></p>
+                      <small> - </small>
+                    </div>
+                    <p class="mb-1"></p>
+                    <small></small>
+                  </div>
+                </div>
+               -->
+
+              <div>
+                
+                  <button class="text-left course">
+                    <span class="course-level">[L3]</span>
+                    <span class="course-name">Wireless Networks</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[L3] Wireless Networks</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[M1]</span>
+                    <span class="course-name">Local Access Networks</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[M1] Local Access Networks</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[M1]</span>
+                    <span class="course-name">Network Performance Evaluation</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[M1] Network Performance Evaluation</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[L3 & M1]</span>
+                    <span class="course-name">Interconnection & Internet</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[L3 & M1] Interconnection & Internet</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[M1]</span>
+                    <span class="course-name">Graph Theory</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[M1] Graph Theory</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[M2]</span>
+                    <span class="course-name">Real Time Scheduling and Systems</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[M2] Real Time Scheduling and Systems</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[L3]</span>
+                    <span class="course-name">Centralized Operating Systems</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[L3] Centralized Operating Systems</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[M1]</span>
+                    <span class="course-name">Concurrent Systems</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[M1] Concurrent Systems</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[M1]</span>
+                    <span class="course-name">Introduction to Web Applications</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[M1] Introduction to Web Applications</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[M2]</span>
+                    <span class="course-name">Cloud Computing and Big Data</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[M2] Cloud Computing and Big Data</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[M2]</span>
+                    <span class="course-name">Infrastructure for Cloud Computing and Big Data</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[M2] Infrastructure for Cloud Computing and Big Data</button> -->
+                
+                  <button class="text-left course">
+                    <span class="course-level">[L3]</span>
+                    <span class="course-name">C Programming</span>
+                  </button>
+                  <!-- <button type="button" class="list-group-item text-left">[L3] C Programming</button> -->
+                
+              </div>
+          
+            </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!-- ANIMATE.JS ANIMATE LIBRARY
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+-->
+
+
+<!--JS FUNCTION FOR RECENT WORK SECTION -->
+<script>
+    $('#test-list a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+    })
+</script> 
+
+<!-- OPTIONAL TOAST JS FUNCTION-->
+<script>
+    $(document).ready(function() {
+        $(".toast").toast("show");
+    });
+</script>
+
+
+<script>
+$('body').scrollspy({ target: '#list-example' })
+</script>
+
+<script>
+$('.collapse').collapse()
+</script>
+
+<script>
+$('.show').show()
+</script>
+
+    </div>
+    <div class="dumbarton-spacer"></div>
+    <div class="navbar navbar-default navbar-fixed-bottom footer-div">
+  <div class="container">
+    <p class="navbar-text pull-left">© 2020 - Theme Built By Tyler Butler, See it on
+        <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton" target="_blank" >GitHub</a>
+    </p>
+    <p class="navbar-text pull-right">
+            <!-- Displays Social Media Icons based on _config.yml settings -->
+
+<span style="color: Black;">
+     
+    
+        <a href="https://github.com/kjiokeng">
+        <span style="color: black;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://www.linkedin.com/in/kevin-jiokeng">
+        <span style="color: black;">
+            <i class="fab fa-linkedin fa-lg"></i></a>
+        </span>
+    
+    
+    
+    
+     
+    <i> &nbsp;&nbsp; </i>
+</span>
+
+    </p>
+  </div>
+</div> 
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+  </body>
+</html>
