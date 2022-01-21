@@ -673,6 +673,14 @@ a:visited {color: #014994;}   /* visited link */
   left: 0;
 }
 
+.publication {
+  padding-bottom: 1em;
+}
+
+.links a.btn:nth-child(1) {
+  padding-left: 0;
+}
+
 /* End of modified by kjiokeng */
 
 
