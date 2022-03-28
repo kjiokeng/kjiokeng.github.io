@@ -678,7 +678,19 @@ a:visited {color: #014994;}   /* visited link */
 }
 
 .links a.btn:nth-child(1) {
-  padding-left: 0;
+  margin-left: 0;
+}
+
+.links a.btn {
+  border: 1px solid #014994;
+  margin: 0px 2px;
+  padding: 2px 10px;
+}
+
+.links a.btn:hover {
+  background-color: #f3f3f3;
+  color: black;
+  border: 1.5px solid #014994;
 }
 
 /* End of modified by kjiokeng */
