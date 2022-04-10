@@ -693,6 +693,10 @@ a:visited {color: #014994;}   /* visited link */
   border: 1.5px solid #014994;
 }
 
+#about p{
+  margin-bottom: 12px;
+}
+
 /* End of modified by kjiokeng */
 
 
