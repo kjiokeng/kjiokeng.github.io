@@ -75,6 +75,11 @@ Follow the following instructions to install the Dumbarton theme:
     ```bash
     bundle exec jekyll serve
     ```
+3. Build for deployment. Resulting website sources will be available in ```_site``` folder
+    ```bash
+    JEKYLL_ENV=production bundle exec jekyll build
+    ```
+
 
 ## Setting Options  
 
